@@ -1,0 +1,16 @@
+PHP ile Sepetten Ürün Kaldırma İşlemi
+
+Bu staj döneminde, bir e-ticaret sitesinin sepet işlevselliğini geliştirmek için PHP kullanarak sepetten ürün kaldırma işlemini gerçekleştirdim. Aşağıda bu işlemi adım adım açıklıyorum:
+
+Oturum Yönetimi: İlk olarak, kullanıcı oturumlarını başlatmak için session_start() fonksiyonunu kullandım ve gerekli veritabanı bağlantısını sağlamak için include işlevini kullandım.
+
+Ürün ID'sini Kontrol Etme: Kullanıcının sepetten kaldırmak istediği ürünün ID'sini almak için URL'den product_id parametresini kontrol ettim. Eğer bu parametre eksikse, hata mesajı verip işlemi sonlandırdım.
+
+Ürünün Sepette Olup Olmadığını Kontrol Etme: Belirtilen ürünün sepet içinde olup olmadığını kontrol ettim. Eğer sepet boşsa veya belirtilen ürün sepet içinde bulunmuyorsa, uygun hata mesajlarını verdikten sonra işlemi sonlandırdım.
+
+Ürünü Sepetten Kaldırma: Ürünü sepetten kaldırmak için unset() işlevini kullandım. Ayrıca, bu işlemi veritabanından da gerçekleştirmek için DELETE sorgusu hazırladım ve çalıştırdım.
+
+Hata Ayıklama: Veritabanından ürünün başarıyla silinip silinmediğini kontrol etmek için gerekli hata ayıklama adımlarını gerçekleştirdim. Eğer bir hata varsa, kullanıcıya uygun bir hata mesajı verdim ve işlemi sonlandırdım.
+
+Sonuç olarak, PHP programlama dili kullanarak sepetten ürün kaldırma işlemini başarıyla gerçekleştirdim. Bu süreçte, kullanıcı deneyimini artırmak ve site performansını iyileştirmek için önemli bir adım attım.
+

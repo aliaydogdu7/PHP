@@ -1,0 +1,16 @@
+PHP ile Sepete Ürün Ekleme İşlemi
+
+
+Staj döneminde, PHP kullanarak bir e-ticaret sitesi için sepete ürün ekleme işlemini gerçekleştirdim. İşlem aşağıdaki adımları içerir:
+
+Oturum Yönetimi ve Veritabanı Bağlantısı: İlk olarak, kullanıcı oturumunu başlattım ve veritabanına bağlandım.
+
+Ürün Bilgilerini Kontrol Etme: GET isteği ile gönderilen ürün bilgilerini aldım ve eksik bir bilgi varsa uygun bir hata mesajı döndürdüm.
+
+Ürünü Sepete Ekleme: Sepet boşsa veya belirtilen ürün sepette bulunmuyorsa, yeni ürünü sepete ekledim. Aksi takdirde, aynı ürün sepette bulunuyorsa miktarını artırdım veya yeni ürün olarak ekledim.
+
+Veritabanına Ekleme veya Güncelleme: Veritabanında aynı ürün varsa miktarını artırdım, yoksa yeni ürün olarak ekledim.
+
+Sepet İçindeki Ürün Sayısını Güncelleme: Son olarak, sepet içindeki ürün sayısını güncelledim ve bunu kullanıcıya geri döndürdüm.
+
+Bu süreçte, kullanıcıların alışveriş deneyimini iyileştirmek için önemli bir adım attım ve PHP dilindeki yeteneklerimi geliştirdim.
